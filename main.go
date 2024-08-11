@@ -63,7 +63,9 @@ func (p *BrainFuck) Run() error {
 			fmt.Printf("%c", p.tape[p.ptr])
 		case ',':
 			var input byte
-			fmt.Scanf("%c", &input)
+			if _, err := fmt.Scanf("%c", &input); err != nil {
+				return err
+			}
 			p.tape[p.ptr] = input
 		case '[':
 			if p.tape[p.ptr] == 0 {
