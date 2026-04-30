@@ -1,4 +1,4 @@
-BIN := bin/gbf
+BIN := bin/gobf
 BUILD_LDFLAGS := "-s -w"
 
 .PHONY: all

@@ -1,17 +1,17 @@
-# gbf
+# gobf
 
 Brainfuck interpreter written in Go.
 
 ## Installation
 
 ```bash
-go install github.com/candy12t/gbf@latest
+go install github.com/candy12t/gobf@latest
 ```
 
 ## Example
 
 ```bash
-gbf /dev/stdin <<EOF
+gobf /dev/stdin <<EOF
 +++++++++[->++++++++>+++++++++++>+++++<<<]>.>++.+++++++..+++.>-.------------.<++++++++.--------.+++.------.--------.>+.
 EOF
 
